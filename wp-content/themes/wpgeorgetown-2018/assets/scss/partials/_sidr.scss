@@ -41,7 +41,8 @@ body.sidr-open:before {
 }
 
 .sidr {
-	background: $white;
+	background: $grey_3;
+	border-left: 2px solid #444;
 	display:block;
 	position:fixed;
 	top:0;
@@ -61,15 +62,19 @@ body.sidr-open:before {
 			position: relative;
 
 			a {
-				background: $white;
-				border-bottom: 1px solid $border_color;
-				color: $highlight;
+				background: $grey_3;
+				border-bottom: 2px solid #444;
+				color: $white;
 				display: block;
-				font-size: 16px;
+				font-size: 18px;
 				line-height: $sidr_close - 20px;
 				padding: 10px 10px 10px 20px;
 				text-decoration: none;
-				text-transform: uppercase;
+			}
+
+			&:hover > a,
+			&.current-menu-item > a {
+				background: $blue_1;
 			}
 
 			&.menu-item-has-children {

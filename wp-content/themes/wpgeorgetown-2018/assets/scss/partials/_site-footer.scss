@@ -2,10 +2,14 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	padding-top: 40px;
+	background: $grey_4;
+	border-top: 1px solid $grey_5;
+	color: $grey_2;
+	font-size: 16px;
+	padding: $base-margin 0;
 	text-align: center;
 }
 
-.site-footer p {
+.site-footer p:last-child {
 	margin-bottom: 0;
 }
