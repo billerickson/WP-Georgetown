@@ -15,8 +15,8 @@ wp-content/plugins/**
 # Start editing!
 
 # Theme
-!wp-content/themes/my-custom-theme/
-!wp-content/themes/my-custom-theme/**
+!wp-content/themes/wpgeorgetown-2018/
+!wp-content/themes/wpgeorgetown-2018/**
 
 # Functionality Plugin
 !wp-content/plugins/core-functionality/

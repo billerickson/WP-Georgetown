@@ -1,0 +1,52 @@
+// Colors
+$white: #fff;
+$grey_1: #ccc;
+$grey_2: #333;
+$black: #000;
+$green_1: #50BD3A;
+
+$base-color: $grey_2;
+$highlight: $green_1;
+$border-color: $grey_1;
+
+// Socials
+$social_email: #424345;
+$social_facebook: #3B5998;
+$social_googleplus: #DF4A32;
+$social_linkedin: #007BB6;
+$social_pinterest: #CB2027;
+$social_twitter: #00B6F1;
+$social_youtube: #FF0000;
+$social_instagram: #C32AA3;
+$social_snapchat: #fffc00;
+$social_tumblr: #35465d;
+$social_vimeo: #45bbff;
+$social_stumbleupon: #eb4924;
+$social_yahoo: #430297;
+$social_soundcloud: #ff5500;
+$social_dribble: #ea4c89;
+$social_reddit: #ff5700;
+
+// Sidr
+$sidr_width: 345px;
+$sidr_close: 44px;
+$sidr_total: $sidr_width + $sidr_close;
+
+// Grid
+$grid-max-width: 1200px;
+$grid-gutter: 32px;
+$base-margin: 32px;
+
+// Include Media
+$breakpoints: (
+  'phone'  : 360px,
+  'small'  : 768px,
+  'tablet' : 768px, // required for include-media
+  'medium' : 992px,
+  'large'  : 1200px,
+  'desktop': $grid-max-width + $grid-gutter, // required for include-media
+);
+
+@import "../vendor/_include-media";
+@import "../modules/helpers";
+@import "../modules/base-styles";
