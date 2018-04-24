@@ -16,6 +16,6 @@ use Carbon_Fields\Field;
  *
  */
 function ea_register_custom_fields() {
-
+	
 }
 add_action( 'carbon_fields_register_fields', 'ea_register_custom_fields' );
