@@ -57,3 +57,23 @@ function ea_comments() {
 
 }
 add_action( 'tha_content_while_after', 'ea_comments' );
+
+/**
+ * Entry Meta
+ *
+ */
+function ea_entry_meta() {
+
+	if( ! is_single() )
+		return;
+
+	$output = '<span class="entry-date">' . get_the_date( 'F j, Y' ) . '</span>';
+
+	$meetup_url = esc_url_raw( ea_cf( 'ea_meetup_url' ) );
+	if( $meetup_url )
+		$output .= ' <a class="meetup-link" href="' . $meetup_url . '">View Meetup</a>';
+
+	if( !empty( $output ) )
+		echo '<p class="entry-meta">' . $output . '</p>';
+}
+add_action( 'tha_entry_top', 'ea_entry_meta' );

@@ -12,8 +12,6 @@ echo '<article class="' . join( ' ', get_post_class() ) . '">';
 
 	echo '<header class="entry-header">';
 		echo '<h1 class="entry-title">' . get_the_title() . '</h1>';
-		if( 'post' == get_post_type() )
-			echo '<p class="entry-meta">' . get_the_date( 'F j, Y' ) . '</p>';
 		tha_entry_top();
 	echo '</header>';
 

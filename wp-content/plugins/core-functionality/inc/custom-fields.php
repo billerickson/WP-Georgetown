@@ -16,6 +16,11 @@ use Carbon_Fields\Field;
  *
  */
 function ea_register_custom_fields() {
-	
+
+	Container::make( 'post_meta', 'Meetup Details' )
+		->where( 'post_type', '=', 'post' )
+		->add_fields( array(
+			Field::make( 'text', 'ea_meetup_url', 'Meetup URL' )
+		));
 }
 add_action( 'carbon_fields_register_fields', 'ea_register_custom_fields' );
