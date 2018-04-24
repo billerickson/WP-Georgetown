@@ -96,27 +96,28 @@
 		width: 100%;
 	}
 
-	.menu > li:last-child > a {
-		padding-right: 0;
-	}
-
 	.menu-item {
 		float: left;
 		list-style: none;
 
 		a {
 			border: none;
-			color: $base-color;
+			color: $white;
 			display: block;
 			font-size: 16px;
-			padding: 20px 22px 10px;
+			line-height: 20px;
+			padding: 20px;
 			position: relative;
+		}
+
+		&:hover > a {
+			text-decoration: none;
 		}
 
 		&:hover > a,
 		&.current-menu-item > a,
 		&.current-menu-ancestor > a {
-			color: $highlight;
+			background: $grey_2;
 		}
 
 		&:hover {

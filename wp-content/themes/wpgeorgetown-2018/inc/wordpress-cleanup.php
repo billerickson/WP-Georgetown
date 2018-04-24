@@ -118,7 +118,7 @@ add_filter( 'get_the_archive_title', 'ea_archive_title_remove_prefix' );
  *
  */
 function ea_excerpt_more() {
-	return '&hellip;';
+	return '&hellip; <a href="' . get_permalink() . '">Read More</a>';
 }
 add_filter( 'excerpt_more', 'ea_excerpt_more' );
 

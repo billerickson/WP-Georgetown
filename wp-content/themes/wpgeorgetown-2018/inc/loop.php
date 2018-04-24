@@ -79,7 +79,7 @@ function ea_entry_meta() {
 
 	$meetup_url = esc_url_raw( ea_cf( 'ea_meetup_url' ) );
 	if( $meetup_url )
-		$output .= ' <a class="meetup-link" href="' . $meetup_url . '">View Meetup</a>';
+		$output .= ' <a class="meetup-link" href="' . $meetup_url . '">View on Meetup.org</a>';
 
 	if( !empty( $output ) )
 		echo '<p class="entry-meta">' . $output . '</p>';
