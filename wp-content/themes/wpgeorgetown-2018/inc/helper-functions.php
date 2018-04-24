@@ -149,3 +149,28 @@ function ea_icon( $slug = '' ) {
 	if( file_exists( $icon_path ) )
 		return file_get_contents( $icon_path );
 }
+
+/**
+ * Join Multiple Items
+ * Separate last two items by 'and', remaining by commas
+ * Ex: item 1, item 2 and item 3
+ */
+function ea_join_multiple( $items ) {
+
+	if ( empty( $items ) ) {
+		$output = '';
+
+	} elseif ( 1 == count( $items ) ) {
+		$output = $items[0];
+
+	} else {
+		// Combine all but last partial using commas.
+		$output = implode( ', ', array_slice( $items, 0, -1 ) );
+		// Add 'and' separator.
+		$output .= ' and ';
+		// Add last partial.
+		$output .= end( $items );
+	}
+
+	return $output;
+}

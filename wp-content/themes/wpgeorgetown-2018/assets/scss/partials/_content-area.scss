@@ -20,6 +20,40 @@
 	border: none;
 }
 
+.entry-header {
+	margin-bottom: 16px;
+
+	.single & {
+		margin-bottom: 32px;
+	}
+
+	.entry-title {
+		margin-bottom: 0;
+	}
+
+	.entry-meta {
+		margin: 6px 0 0;
+	}
+}
+
+.entry-meta {
+
+	font-size: 14px;
+
+	& > a,
+	& > span {
+		@include margin-no-edge( 0 12px );
+	}
+}
+
+/* Archive
+--------------------------------------------- */
+
+.archive-intro {
+	border-bottom: 5px solid rgba( $blue_1, .2 );
+	margin-bottom: $base-margin;
+}
+
 /* Entry Navigation
 --------------------------------------------- */
 

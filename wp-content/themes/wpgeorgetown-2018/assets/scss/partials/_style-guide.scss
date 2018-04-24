@@ -184,14 +184,6 @@ h6 {
 	margin-bottom: $base-margin / 2;
 	padding: 0;
 
-	a {
-		color: $base-color;
-
-		&:hover {
-			color: $highlight;
-			text-decoration: none;
-		}
-	}
 }
 
 h1 {

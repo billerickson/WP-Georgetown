@@ -206,21 +206,6 @@
     margin: 0;
     margin-bottom: 16px;
     padding: 0; }
-    .edit-post-visual-editor h1 a,
-    .edit-post-visual-editor h2 a,
-    .edit-post-visual-editor h3 a,
-    .edit-post-visual-editor h4 a,
-    .edit-post-visual-editor h5 a,
-    .edit-post-visual-editor h6 a {
-      color: #23282d; }
-      .edit-post-visual-editor h1 a:hover,
-      .edit-post-visual-editor h2 a:hover,
-      .edit-post-visual-editor h3 a:hover,
-      .edit-post-visual-editor h4 a:hover,
-      .edit-post-visual-editor h5 a:hover,
-      .edit-post-visual-editor h6 a:hover {
-        color: #0073aa;
-        text-decoration: none; }
   .edit-post-visual-editor h1 {
     font-size: 30px; }
     @media (min-width: 768px) {

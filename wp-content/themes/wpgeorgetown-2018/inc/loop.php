@@ -64,10 +64,18 @@ add_action( 'tha_content_while_after', 'ea_comments' );
  */
 function ea_entry_meta() {
 
-	if( ! is_single() )
+	if( 'post' != get_post_type() )
 		return;
 
 	$output = '<span class="entry-date">' . get_the_date( 'F j, Y' ) . '</span>';
+
+	$presenters = get_the_terms( get_the_ID(), 'presenter' );
+	if( !( empty( $presenters ) || is_wp_error( $presenters ) ) ) {
+		$list = array();
+		foreach( $presenters as $presenter )
+			$list[] = '<a href="' . get_term_link( $presenter, 'presenter' ) . '">' . $presenter->name . '</a>';
+		$output .= ' <span class="presenter">Presented by ' . ea_join_multiple( $list ) . '</span>';
+	}
 
 	$meetup_url = esc_url_raw( ea_cf( 'ea_meetup_url' ) );
 	if( $meetup_url )

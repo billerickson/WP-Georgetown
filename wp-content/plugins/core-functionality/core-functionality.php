@@ -29,3 +29,4 @@ require_once( EA_DIR . '/inc/wordpress-cleanup.php' );
 require_once( EA_DIR . '/inc/kill-trackbacks.php' );
 require_once( EA_DIR . '/inc/custom-fields.php' );
 require_once( EA_DIR . '/inc/custom-fields-helper.php' );
+require_once( EA_DIR . '/inc/presenters.php' );
