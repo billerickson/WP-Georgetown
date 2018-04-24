@@ -2,32 +2,39 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
+	background: $grey_3;
+	border-bottom: 10px solid $blue_1;
 	position: relative;
 }
 
 .title-area {
 	float: left;
-	width: 165px;
+	width: auto;
 
 	h1.site-title,
 	p.site-title {
-		margin: 0;
+		margin: 8px 0;
 	}
 
-/*
 	.site-title a {
-		background-image: url(../images/logo@2x.png);
-	  	background-image: url(../images/logo.svg), none;
-	  	background-size: contain;
-	  	background-repeat: no-repeat;
-		background-position: center center;
+		color: $white;
 		display: block;
-		text-indent: -9999em;
-		width: 100%;
-		height: 0;
-		padding-bottom: 69px / 165px * 100%;
+		@include font-sizes( 24px, 32px );
+		font-weight: 300;
+		line-height: 44px;
+
+		svg {
+			fill: $white;
+			float: left;
+			margin-right: 8px;
+			@include icon-position( 32px, 48px );
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
-*/
+
 }
 
 /* Admin Bar

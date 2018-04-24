@@ -57,15 +57,17 @@
 ---------------------------------------------------------------------------------------------------- */
   /* Button
 --------------------------------------------- */ }
-  .edit-post-visual-editor body, .edit-post-visual-editor .edit-post-visual-editor, .edit-post-visual-editor p {
-    color: #333;
-    font-family: sans-serif;
-    font-size: 16px;
+  .edit-post-visual-editor body, .edit-post-visual-editor .edit-post-visual-editor,
+  .edit-post-visual-editor p {
+    color: #23282d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
     margin: 0; }
-  .edit-post-visual-editor .wp-block-button .wp-block-button__link, .edit-post-visual-editor .button:not(.components-button), .edit-post-visual-editor .wp-block-freeform.blocks-rich-text__tinymce .button:not(.components-button) {
-    background: #50BD3A;
+  .edit-post-visual-editor .wp-block-button .wp-block-button__link, .edit-post-visual-editor .button:not(.components-button),
+  .edit-post-visual-editor .wp-block-freeform.blocks-rich-text__tinymce .button:not(.components-button) {
+    background: #0073aa;
     border: none;
     border-radius: 4px;
     box-shadow: none;
@@ -78,12 +80,13 @@
     transition: all 0.1s ease-in-out;
     width: auto;
     -webkit-appearance: none; }
-    .edit-post-visual-editor .wp-block-button .wp-block-button__link:hover, .edit-post-visual-editor .button:hover:not(.components-button), .edit-post-visual-editor .wp-block-freeform.blocks-rich-text__tinymce .button:hover:not(.components-button) {
-      background-color: #3f962e;
+    .edit-post-visual-editor .wp-block-button .wp-block-button__link:hover, .edit-post-visual-editor .button:hover:not(.components-button),
+    .edit-post-visual-editor .wp-block-freeform.blocks-rich-text__tinymce .button:hover:not(.components-button) {
+      background-color: #005177;
       color: #fff;
       text-decoration: none; }
   .edit-post-visual-editor a {
-    color: #50BD3A;
+    color: #0073aa;
     text-decoration: none; }
     .edit-post-visual-editor a:hover {
       text-decoration: underline; }
@@ -178,8 +181,8 @@
       .edit-post-visual-editor blockquote.is-large.wp-block-quote cite {
         text-align: center; }
     .edit-post-visual-editor blockquote.wp-block-pullquote {
-      border-top: 2px solid #333;
-      border-bottom: 2px solid #333;
+      border-top: 2px solid #23282d;
+      border-bottom: 2px solid #23282d;
       padding: 32px 0; }
   .edit-post-visual-editor hr,
   .edit-post-visual-editor hr.wp-block-separator,
@@ -198,7 +201,7 @@
   .edit-post-visual-editor h4,
   .edit-post-visual-editor h5,
   .edit-post-visual-editor h6 {
-    color: #333;
+    color: #23282d;
     line-height: 1.2;
     margin: 0;
     margin-bottom: 16px;
@@ -209,14 +212,14 @@
     .edit-post-visual-editor h4 a,
     .edit-post-visual-editor h5 a,
     .edit-post-visual-editor h6 a {
-      color: #333; }
+      color: #23282d; }
       .edit-post-visual-editor h1 a:hover,
       .edit-post-visual-editor h2 a:hover,
       .edit-post-visual-editor h3 a:hover,
       .edit-post-visual-editor h4 a:hover,
       .edit-post-visual-editor h5 a:hover,
       .edit-post-visual-editor h6 a:hover {
-        color: #50BD3A;
+        color: #0073aa;
         text-decoration: none; }
   .edit-post-visual-editor h1 {
     font-size: 30px; }

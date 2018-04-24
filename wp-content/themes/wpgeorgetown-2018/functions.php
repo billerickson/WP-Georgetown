@@ -59,7 +59,7 @@ add_action( 'enqueue_block_editor_assets', 'ea_gutenberg_scripts' );
  *
  */
 function ea_theme_fonts_url() {
-	$font_families = apply_filters( 'ea_theme_fonts', array( 'Source+Sans+Pro:400,400i,700,700i' ) );
+	$font_families = apply_filters( 'ea_theme_fonts', array( 'Open+Sans:300,400,700' ) );
 	$query_args = array(
 		'family' => implode( '|', $font_families ),
 		'subset' => 'latin,latin-ext',
