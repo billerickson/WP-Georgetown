@@ -157,3 +157,49 @@
 		}
 	}
 }
+
+/* Home Header
+---------------------------------------------------------------------------------------------------- */
+
+.home-header {
+	background: rgba( $blue_1, .2 );
+	font-size: 16px;
+	padding: $base-margin 0;
+
+	p {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	@include media(">=tablet") {
+
+		.widget {
+			float: left;
+			margin-left: 32px / 1028px * 100%;
+			width: 498px / 1028px * 100%;
+
+			&:nth-of-type(2n+1) {
+				clear: both;
+				margin-left: 0;
+			}
+		}
+
+		@supports( display: grid ) {
+
+			.wrap {
+				display: grid;
+				grid-template-columns: repeat( 2, 1fr );
+				grid-column-gap: $grid-gutter;
+
+				.widget {
+					float: none;
+					width: 100%;
+					margin: 0;
+				}
+			}
+		}
+	}
+}

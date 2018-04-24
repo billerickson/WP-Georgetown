@@ -125,6 +125,12 @@ function ea_setup() {
 		'mobile'  => esc_html__( 'Mobile Menu', 'ea' ),
 	) );
 
+	// Widget Area
+ 	register_sidebar( ea_widget_area_args( array(
+ 		'name' => esc_html__( 'Home Header', 'ea' ),
+ 	) ) );
+
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -147,7 +153,7 @@ add_action( 'after_setup_theme', 'ea_setup' );
  */
 function ea_template_hierarchy( $template ) {
 
-	if( is_home() || is_search() )
+	if( is_search() )
 		$template = get_query_template( 'archive' );
 	return $template;
 }

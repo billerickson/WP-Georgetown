@@ -174,3 +174,29 @@ function ea_join_multiple( $items ) {
 
 	return $output;
 }
+
+/**
+ * Default Widget Area Arguments
+ *
+ * @param array $args
+ * @return array $args
+ */
+function ea_widget_area_args( $args = array() ) {
+
+   $defaults = array(
+	   'name'          => '',
+	   'id'            => '',
+	   'description'   => '',
+	   'before_widget' => '<section id="%1$s" class="widget %2$s">',
+	   'after_widget'  => '</section>',
+	   'before_title'  => '<h4 class="widget-title">',
+	   'after_title'   => '</h4>',
+   );
+   $args = wp_parse_args( $args, $defaults );
+
+   if( !empty( $args['name'] ) && empty( $args['id'] ) )
+	   $args['id'] = sanitize_title_with_dashes( $args['name'] );
+
+   return $args;
+
+}

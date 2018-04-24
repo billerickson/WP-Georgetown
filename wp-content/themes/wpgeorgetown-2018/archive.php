@@ -29,6 +29,9 @@ function ea_archive_header() {
 	if( is_home() && get_option( 'page_for_posts' ) ) {
 		$title = get_the_title( get_option( 'page_for_posts' ) );
 
+	} elseif( is_home() ) {
+		$title = 'Recent Posts';
+
 	} elseif( is_search() ) {
 		$title = 'Search Results for: <em>' . get_search_query() . '</em>';
 
