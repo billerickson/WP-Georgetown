@@ -48,7 +48,12 @@
 
 	& > a,
 	& > span {
-		@include margin-no-edge( 0 12px );
+		@include margin-no-edge( 0 24px 0 0 );
+
+		@include media("<tablet") {
+			margin: 0;
+			display: block;
+		}
 	}
 }
 

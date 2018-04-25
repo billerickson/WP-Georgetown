@@ -69,6 +69,8 @@ function ea_entry_meta() {
 
 	$output = '<span class="entry-date">' . get_the_date( 'F j, Y' ) . '</span>';
 
+	$output .= get_the_term_list( get_the_ID(), 'category', ' <span class="entry-category">Posted in ', ', ', '</span>' );
+
 	$presenters = get_the_terms( get_the_ID(), 'presenter' );
 	if( !( empty( $presenters ) || is_wp_error( $presenters ) ) ) {
 		$list = array();
