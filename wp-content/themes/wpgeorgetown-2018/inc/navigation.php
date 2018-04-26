@@ -29,6 +29,27 @@ function ea_header_navigation() {
 add_action( 'tha_header_bottom', 'ea_header_navigation' );
 
 /**
+ * Icons in Nav
+ *
+ */
+function ea_icons_in_nav( $item_output, $item, $depth, $args ) {
+
+	// Only run on primary and mobile menus
+	if( ! in_array( $args->theme_location, array( 'primary', 'mobile' ) ) )
+		return $item_output;
+
+	$icons = array( 'twitter', 'meetup' );
+	foreach( $icons as $icon ) {
+		if( in_array( $icon, $item->classes ) ) {
+			$item_output = str_replace( $item->title, ea_icon( $icon ) . '<span class="screen-reader-text">' . $item->title . '</span>', $item_output );
+		}
+	}
+
+	return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'ea_icons_in_nav', 10, 4 );
+
+/**
  * Mobile Menu
  *
  */

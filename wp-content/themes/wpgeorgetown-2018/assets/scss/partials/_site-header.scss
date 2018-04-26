@@ -116,6 +116,17 @@
 			text-decoration: none;
 		}
 
+		svg {
+			height: 24px;
+			width: auto;
+			fill: $white;
+		}
+
+		&.twitter a,
+		&.meetup a {
+			padding: 16px 20px;
+		}
+
 		&:hover > a,
 		&.current-menu-item > a,
 		&.current-menu-ancestor > a {

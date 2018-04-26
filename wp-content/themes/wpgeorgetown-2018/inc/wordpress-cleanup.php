@@ -66,6 +66,8 @@ function ea_clean_nav_menu_classes( $classes ) {
 
 	$allowed_classes = array(
 		'home',
+		'meetup',
+		'twitter',
 		'menu-item',
 		'current-menu-item',
 		'current-menu-ancestor',
