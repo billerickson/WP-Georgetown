@@ -93,28 +93,82 @@
 .entry-comments {
 
 	.comment-list {
+		margin: 0;
 
 		li {
-			border-top: 1px solid $border-color;
 			list-style-type: none;
-			padding: 16px 0 0;
+		}
+
+		& > li {
+			margin-bottom: 32px;
+		}
+
+		.comment-meta {
+			margin-bottom: 16px;
+
+			.avatar {
+				float: left;
+				border-radius: 50%;
+				margin-right: 8px;
+			}
+		}
+
+		.says,
+		.comment-metadata {
+			display: none;
+		}
+
+		article {
+			background: $grey_4;
+			padding: 16px;
+
+			@include media(">=tablet") {
+				padding: 32px;
+			}
+		}
+
+		ol.children {
+			margin: 0;
+			border-left: 16px solid $grey_2;
+
+			article {
+				background: $grey_7;
+			}
 		}
 	}
 
 	.comment-respond {
 
-		input[type="email"],
-		input[type="text"],
-		input[type="url"] {
-			width: 50%
-		}
-
 		label {
 			display: block;
+			font-size: 16px;
+			font-weight: 700;
 			margin-right: 12px;
 
 			&[for="subscribe"] {
 				display: inline-block;
+			}
+		}
+
+		.form-submit {
+			text-align: right;
+		}
+
+		@include media(">=tablet"){
+
+			.comment-form {
+				display: grid;
+				grid-template-columns: repeat( 2, 1fr );
+				grid-column-gap: $grid-gutter;
+
+				* {
+					grid-column: 1 / -1;
+				}
+
+				.comment-form-author,
+				.comment-form-email {
+					grid-column: auto / auto;
+				}
 			}
 		}
 
