@@ -18,6 +18,9 @@ echo '<article class="' . join( ' ', get_post_class() ) . '">';
 	echo '<div class="entry-content">';
 		tha_entry_content_before();
 
+		if( has_post_thumbnail() )
+			echo '<p><a class="entry-image-link" href="' . get_permalink() . '">' . get_the_post_thumbnail( get_the_ID(), 'large' ) . '</a></p>';
+
 		the_content();
 
 		wp_link_pages( array(
