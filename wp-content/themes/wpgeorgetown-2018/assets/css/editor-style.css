@@ -378,6 +378,7 @@ ul {
 
 code,
 pre {
+  background: #f7f7f7;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 12px; }
 

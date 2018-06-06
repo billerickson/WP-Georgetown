@@ -98,6 +98,7 @@
     padding: 0; }
   .edit-post-visual-editor code,
   .edit-post-visual-editor pre {
+    background: #f7f7f7;
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
     font-size: 12px; }
   .edit-post-visual-editor code {
