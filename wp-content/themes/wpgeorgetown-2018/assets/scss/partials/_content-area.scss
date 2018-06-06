@@ -70,6 +70,10 @@
 	text-align: center;
 }
 
+.archive .site-main article:not(:last-child) {
+	border-bottom: 1px solid $border-color;
+}
+
 /* Entry Navigation
 --------------------------------------------- */
 
