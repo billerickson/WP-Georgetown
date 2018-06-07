@@ -200,3 +200,27 @@ function ea_widget_area_args( $args = array() ) {
    return $args;
 
 }
+
+/**
+ * Presentation Header
+ *
+ */
+function ea_presentation_header() {
+
+	if( ! in_category( 'meetup-summary' ) )
+		return;
+
+	$presenter = ea_first_term( 'presenter' );
+	$presenter = !empty( $presenter ) && ! is_wp_error( $presenter ) ? '<span class="presenter">Presented by ' . $presenter->name . '</span>' : '';
+
+	echo '<div class="presentation-header">';
+		echo '<h2>' . get_the_title() . '</h2>';
+		echo '<div class="byline">';
+			echo ea_icon( 'wordpress' );
+			echo '<span class="meetup">' . get_bloginfo( 'name' ) . '</span>';
+			echo $presenter;
+		echo '</div>';
+		if( ! is_singular() )
+			echo '<a href="' . get_permalink() . '" class="block-link"></a>';
+	echo '</div>';
+}
