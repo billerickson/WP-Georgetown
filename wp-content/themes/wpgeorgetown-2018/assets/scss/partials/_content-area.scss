@@ -40,6 +40,14 @@
 	.entry-meta {
 		margin: 6px 0 0;
 	}
+
+	.shared-counts-wrap {
+		margin: 6px 0 0;
+
+		&.style-bar .shared-counts-button.included_total {
+			display: none;
+		}
+	}
 }
 
 .entry-meta {
