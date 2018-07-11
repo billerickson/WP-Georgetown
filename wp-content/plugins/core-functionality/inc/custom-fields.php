@@ -22,5 +22,12 @@ function ea_register_custom_fields() {
 		->add_fields( array(
 			Field::make( 'text', 'ea_meetup_url', 'Meetup URL' )
 		));
+
+	Container::make( 'term_meta', 'After Post CTA' )
+		->where( 'term_taxonomy', '=', 'category' )
+		->add_fields( array(
+			Field::make( 'textarea', 'ea_after_post_cta', 'After Post CTA' )
+		));
+
 }
 add_action( 'carbon_fields_register_fields', 'ea_register_custom_fields' );

@@ -102,8 +102,10 @@
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
     font-size: 12px; }
   .edit-post-visual-editor code {
-    padding: 2px 4px;
-    white-space: nowrap; }
+    padding: 2px 4px; }
+    @media (min-width: 768px) {
+      .edit-post-visual-editor code {
+        white-space: nowrap; } }
   .edit-post-visual-editor pre {
     display: block;
     padding: 9.5px;

@@ -36,7 +36,9 @@ pre {
 
 code {
 	padding: 2px 4px;
-	white-space: nowrap;
+	@include media(">=tablet") {
+		white-space: nowrap;
+	}
 }
 
 pre {

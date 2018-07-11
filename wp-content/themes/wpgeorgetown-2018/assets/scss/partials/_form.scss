@@ -50,4 +50,17 @@ input[type="search"]::-webkit-search-results-button {
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@include media("<tablet") {
+
+		.wpforms-field-container .wpforms-field-row-block.wpforms-one-half {
+			width: 100%;
+			margin-left: 0;
+
+
+			&.wpforms-first {
+				margin-bottom: 16px;
+			}
+		}
+	}
 }

@@ -383,8 +383,10 @@ pre {
   font-size: 12px; }
 
 code {
-  padding: 2px 4px;
-  white-space: nowrap; }
+  padding: 2px 4px; }
+  @media (min-width: 768px) {
+    code {
+      white-space: nowrap; } }
 
 pre {
   display: block;
@@ -685,6 +687,12 @@ input[type="search"]::-webkit-search-results-button {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
+  @media (max-width: 767px) {
+    .wpforms-container .wpforms-field-container .wpforms-field-row-block.wpforms-one-half {
+      width: 100%;
+      margin-left: 0; }
+      .wpforms-container .wpforms-field-container .wpforms-field-row-block.wpforms-one-half.wpforms-first {
+        margin-bottom: 16px; } }
 
 /* Post Elements
 ---------------------------------------------------------------------------------------------------- */

@@ -140,6 +140,25 @@
 	}
 }
 
+.entry-content {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
+
 /* Archive
 --------------------------------------------- */
 
@@ -170,6 +189,73 @@
 }
 
 
+/* After Post CTA
+--------------------------------------------- */
+
+.after-post-cta {
+	background: $grey_3;
+	border-top: 10px solid $blue_1;
+	border-bottom: 10px solid $blue_1;
+	color: $white;
+	padding: 16px;
+	margin-bottom: 32px;
+
+	.wpforms-container {
+		max-width: 100%;
+		margin: 0;
+
+		.wpforms-description {
+			color: $grey_1;
+		}
+
+		input {
+			border-radius: 4px;
+		}
+
+		@include media(">=tablet") {
+			overflow: hidden;
+			width: 100%;
+
+			.wpforms-head-container {
+				overflow: hidden;
+				width: 100%;
+
+				.wpforms-title {
+					float: left;
+					margin: 0;
+				}
+
+				.wpforms-description {
+					float: left;
+					margin: 6px 0 0 32px;
+				}
+			}
+
+			.wpforms-field-container {
+				float: left;
+				width: calc( 100% - 146px );
+
+				@supports( display: grid ) {
+					display: grid;
+					grid-template-columns: repeat( 2, 1fr );
+					grid-column-gap: 16px;
+				}
+
+			}
+
+			.wpforms-submit-container {
+				float: right;
+				width: 130px;
+
+				.wpforms-submit {
+					width: 100%;
+				}
+			}
+		}
+
+	}
+
+}
 /* Comments
 --------------------------------------------- */
 
