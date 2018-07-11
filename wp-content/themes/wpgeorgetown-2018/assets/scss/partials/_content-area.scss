@@ -228,7 +228,8 @@
 			font-weight: 700;
 			margin-right: 12px;
 
-			&[for="subscribe"] {
+			&[for="subscribe"],
+			&[for="wp-comment-cookies-consent"] {
 				display: inline-block;
 			}
 		}
