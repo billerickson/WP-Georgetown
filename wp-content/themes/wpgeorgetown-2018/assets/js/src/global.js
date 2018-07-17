@@ -1,10 +1,6 @@
-// @codekit-prepend "jquery.fitvids.js"
 // @codekit-prepend "jquery.sidr.min.js"
 
 jQuery(function($){
-
-	// FitVids
-	$('.entry-content').fitVids({ customSelector: 'iframe[src^="www.slideshare.net"]' });
 
 	// Mobile Menu
 	$('.mobile-menu-toggle').sidr({
