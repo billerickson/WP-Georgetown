@@ -12,3 +12,20 @@
 		@extend %button;
 	}
 }
+
+/* Embed
+--------------------------------------------- */
+
+.wp-block-embed-slideshare {
+	width: 100%;
+	height: 0;
+	padding-bottom: 256px / 427px * 100%;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+}

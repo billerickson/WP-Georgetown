@@ -56,6 +56,8 @@
   /* Blocks
 ---------------------------------------------------------------------------------------------------- */
   /* Button
+--------------------------------------------- */
+  /* Embed
 --------------------------------------------- */ }
   .edit-post-visual-editor body, .edit-post-visual-editor .edit-post-visual-editor,
   .edit-post-visual-editor p {
@@ -406,6 +408,16 @@
   .edit-post-visual-editor .wp-block-button {
     margin-bottom: 32px;
     text-align: center; }
+  .edit-post-visual-editor .wp-block-embed-slideshare {
+    width: 100%;
+    height: 0;
+    padding-bottom: 59.9531615925%; }
+    .edit-post-visual-editor .wp-block-embed-slideshare iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important; }
   .edit-post-visual-editor .editor-block-list__block {
     max-width: 1200px; }
   .edit-post-visual-editor blockquote,
