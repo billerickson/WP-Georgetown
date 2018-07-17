@@ -4,7 +4,7 @@
 jQuery(function($){
 
 	// FitVids
-	$('.entry-content').fitVids();
+	$('.entry-content').fitVids({ customSelector: 'iframe[src^="www.slideshare.net"]' });
 
 	// Mobile Menu
 	$('.mobile-menu-toggle').sidr({
