@@ -221,6 +221,6 @@ function ea_presentation_header() {
 			echo $presenter;
 		echo '</div>';
 		if( ! is_singular() )
-			echo '<a href="' . get_permalink() . '" class="block-link"></a>';
+			echo '<a href="' . get_permalink() . '" class="block-link"><span class="screen-reader-text">' . get_the_title() . '</span></a>';
 	echo '</div>';
 }
