@@ -294,4 +294,8 @@ figure {
 		font-size: 14px;
 		margin: #{$base-margin / 2} auto;
 	}
+
+	.aligncenter {
+		margin: 0 auto $base-margin;
+	}
 }

@@ -626,6 +626,9 @@ figure {
     font-style: italic;
     font-size: 14px;
     margin: 16px auto; }
+  .wp-caption .aligncenter,
+  .wp-block-image .aligncenter {
+    margin: 0 auto 32px; }
 
 /* Forms
 --------------------------------------------- */

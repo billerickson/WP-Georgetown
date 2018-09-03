@@ -1,0 +1,102 @@
+.example {
+  margin: 32px 0; }
+  .example pre {
+    background: #dfdfdf;
+    margin-bottom: 32px; }
+  @media only screen and (min-width: 768px) {
+    .example {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 32px; }
+      .example pre {
+        margin: 0; } }
+  .example .item {
+    background: #0073aa;
+    color: #fff;
+    padding: 4px;
+    min-height: 40px; }
+  .example .grid1,
+  .example .grid2,
+  .example .grid3 {
+    display: grid;
+    grid-template-columns: 50px 100px 150px;
+    grid-template-rows: 150px 100px 50px;
+    grid-gap: 20px; }
+  .example .grid3 {
+    grid-auto-rows: 100px; }
+  .example .grid4 {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 20px; }
+  .example .grid5 {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-gap: 20px; }
+  .example .grid6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; }
+  .example .grid7 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px; }
+  .example .grid8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; }
+    .example .grid8 .item:nth-child(2) {
+      width: 300px;
+      background: #00aa37; }
+  .example .grid9 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 12px; }
+  .example .grid10 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; }
+    .example .grid10 .item:nth-child(2) {
+      grid-column: span 2;
+      background: #00aa37; }
+  .example .grid11 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; }
+    .example .grid11 .item:nth-child(2) {
+      grid-column: 2 / 4;
+      background: #00aa37; }
+  .example .grid12 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px; }
+    .example .grid12 header, .example .grid12 nav {
+      grid-column: 1 / -1;
+      text-align: center; }
+    .example .grid12 article {
+      font-size: 12px;
+      padding: 4px; }
+  .example .grid13 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+    align-items: center; }
+  .example .grid14 {
+    overflow: hidden;
+    width: 100%; }
+    .example .grid14 .item-content-area {
+      float: left;
+      width: 70%; }
+    .example .grid14 .item-sidebar {
+      float: right;
+      width: 20%; }
+    @supports (display: grid) {
+      .example .grid14 {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-column-gap: 16px; }
+        .example .grid14 .item-content-area,
+        .example .grid14 .item-sidebar {
+          float: none;
+          width: 100%; } }

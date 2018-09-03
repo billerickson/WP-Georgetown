@@ -31,3 +31,4 @@ require_once( EA_DIR . '/inc/custom-fields.php' );
 require_once( EA_DIR . '/inc/custom-fields-helper.php' );
 require_once( EA_DIR . '/inc/presenters.php' );
 require_once( EA_DIR . '/inc/shortcodes.php' );
+require_once( EA_DIR . '/inc/css-grid-meetup.php' );
