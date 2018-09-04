@@ -182,8 +182,16 @@ function ea_css_grid_meetup( $atts = array() ) {
 	grid-gap: 12px;
 }
 
+@media only screen and (max-width: 767px) {
+	.grid12 {
+		grid-template-columns: repeat( 2, 1fr );
+	}
+}
+
+
 .grid12 header,
 .grid12 nav {
+	background: #f0f0f0;
 	grid-column: 1 / -1;
 	text-align: center;
 }

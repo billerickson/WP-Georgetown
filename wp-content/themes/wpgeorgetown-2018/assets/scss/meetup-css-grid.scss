@@ -111,7 +111,12 @@ $orange: #aa3700;
 		grid-template-columns: repeat( 3, 1fr );
 		grid-gap: 12px;
 
+		@media only screen and (max-width: 767px) {
+			grid-template-columns: repeat( 2, 1fr );
+		}
+
 		header, nav {
+			background: #f0f0f0;
 			grid-column: 1 / -1;
 			text-align: center;
 		}
