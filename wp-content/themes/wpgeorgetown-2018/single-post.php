@@ -14,6 +14,9 @@
  */
 function ea_single_subscribe_cta() {
 
+	if( ! function_exists( 'ea_cf' ) )
+		return;
+
 	$cta = ea_cf( 'ea_after_post_cta', ea_first_term( 'category', 'term_id' ), array( 'type' => 'term_meta' ) );
 	if( empty( $cta ) )
 		return;

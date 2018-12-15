@@ -79,7 +79,7 @@ function ea_entry_meta() {
 		$output .= ' <span class="presenter">Presented by ' . ea_join_multiple( $list ) . '</span>';
 	}
 
-	$meetup_url = esc_url_raw( ea_cf( 'ea_meetup_url' ) );
+	$meetup_url = function_exists( 'ea_cf' ) ? esc_url_raw( ea_cf( 'ea_meetup_url' ) ) : false;
 	if( $meetup_url )
 		$output .= ' <a class="meetup-link" href="' . $meetup_url . '">View on Meetup.com</a>';
 
